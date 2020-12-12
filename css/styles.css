@@ -550,6 +550,7 @@ body {
 .button2:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* end button section*/
 .portfolio-cards-list {
@@ -631,13 +632,16 @@ body {
 /* end portfolio title */
 
 /* BACKDROP */
-/* .backdrop {
+.backdrop {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .modal {
   position: absolute;
@@ -647,5 +651,22 @@ body {
   width: 528px;
   min-height: 581px;
   background-color: #fff;
-} */
+}
+.btn-svg {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.backdrop.is-hidden {
+  opacity: 1;
+}
 /* END BACKDROP */ ;
