@@ -671,8 +671,5 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
-.backdrop.is-hidden {
-  opacity: 1;
-}
 
 /* END BACKDROP */
