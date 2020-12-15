@@ -242,7 +242,7 @@ body {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
-.button {
+.modal-btn {
   cursor: pointer;
   min-width: 200px;
   padding: 10px 32px;
@@ -572,6 +572,14 @@ body {
   margin-top: 30px;
   cursor: pointer;
 }
+.portfolio-list a {
+  display: block;
+}
+.photo-transition:focus .position-card,
+.photo-transition:focus .position-card {
+  transform: translateY(0%);
+}
+
 .portfolio-list:hover,
 .portfolio-list:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -580,6 +588,7 @@ body {
 .portfolio-list:hover .position-card {
   transform: translateY(0%);
 }
+
 .position-img {
   position: relative;
   overflow: hidden;
