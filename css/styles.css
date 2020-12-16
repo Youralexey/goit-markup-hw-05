@@ -154,6 +154,7 @@ body {
 .address-link {
   display: flex;
 }
+
 .address-link:not(:last-child) {
   margin-right: 50px;
 }
